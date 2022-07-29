@@ -20,8 +20,8 @@ class CreateTrainsTable extends Migration
             $table->string('stazione_di_arrivo', 50);
             $table->dateTime('orario_di_partenza', 0);
             $table->dateTime('orario_di_arrivo', 0);
-            $table->integer('numero_treno');
-            $table->integer('numero_carrozza');
+            $table->string('numero_treno', 10);
+            $table->string('numero_carrozza', 20);
             $table->string('in_orario', 20);
             $table->string('cancellato', 20);
             $table->timestamps();
